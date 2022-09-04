@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <nav class="menu">
+        <section class="mb-5 mt-4">
+            <div>
+                <p>Cantidad de cuartos:</p>
+                <input id="roomsinput" min="0" class="form-control w-50 m-auto" type="number">
+            </div>
+            <div>
+                <span>Metros cuadrados </span>
+                <div class="d-flex">
+                    <div class="me-4">
+                        <p>desde: </p><input id="areadesdem2" min="0" class="form-control " type="number">
+                    </div>
+                    <div>
+                        <p> hasta:</p>
+                        <input id="areahastam2" min="0" class="form-control " type="number">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button id="btn-search" class="btn btn-dark">Buscar</button>
+    </nav>
+
+    <section class="content">
+        <span id="notice" class="notice"></span>
+        <div><span class="total">Total:</span><span id="total" class="total">0</span></div>
+        <div id="propiedades" class="row justify-content-center align-items-center mb-4 mt-1">
+        </div>    
+    </section>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
