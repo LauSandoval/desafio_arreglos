@@ -52,16 +52,18 @@ document.querySelector("#propiedades").innerHTML = html
 document.querySelector("#total").innerHTML = count
 function templateProperty(item) {
   return `
-          <div class="col-auto">
-            <div class="card mb-1 mt-5  color">
+          <div class="col-auto mt-3">
+            <div class="card mb-2 mt-5  color">
                 <div><img class="mt-4" src=${item.src}></div>
                 <div><h2> ${item.name}<h2></div>
                 <div class="d-flex justify-content-around">
                 <h6> Cuartos: ${item.rooms}</h6>
                 <h6> m2: ${item.m}</h6>
             </div>
-          <div><p>${item.description}</p></div>
-          <button class="btn btn-warning ">Ver más</button> 
+          <div class="card-body">
+            <div class="px-2"><p>${item.description}</p></div>
+            <button class="btn btn-warning ">Ver más</button> 
+          </div>
           </div>
           </div>
           </div>`

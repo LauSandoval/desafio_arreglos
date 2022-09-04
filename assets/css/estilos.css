@@ -68,6 +68,6 @@ img{
 .color{
 background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(38, 38, 65) 35%, rgb(1, 34, 63) 100%);
-width: 250px;
-height: 300px;
+width: 300px;
+height: 400px;
 }
